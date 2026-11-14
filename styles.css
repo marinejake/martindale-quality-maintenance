@@ -45,12 +45,12 @@
 
 
 /* Expanded service-area line and high-visibility real estate agent callout */
-.agent-promo{display:flex;align-items:center;justify-content:space-between;gap:26px;padding:24px max(8vw,26px);background:linear-gradient(110deg,#0d1c29,#20394d);border-top:5px solid var(--gold);border-bottom:5px solid var(--gold);color:#fff}
-.agent-promo>div{display:grid;gap:5px}
-.agent-promo span{font-size:12px;font-weight:800;letter-spacing:.18em;color:#f0c98f}
-.agent-promo strong{font:700 clamp(16px,2vw,22px) 'Libre Baskerville',Georgia,serif}
-.agent-promo small{font-size:13px;color:#d5dce1}
-.agent-promo>a{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:15px 22px;background:var(--gold);color:#142536;font-weight:800;border:2px solid #f0d1a4;box-shadow:0 4px 0 rgba(0,0,0,.25)}
+.agent-promo{position:absolute;z-index:4;left:0;right:0;top:65%;display:flex;align-items:center;justify-content:space-between;gap:26px;padding:15px max(8vw,26px);background:linear-gradient(110deg,rgba(13,28,41,.97),rgba(32,57,77,.97));border-top:4px solid var(--gold);border-bottom:4px solid var(--gold);color:#fff;line-height:1.35}
+.agent-promo>div{display:grid;gap:4px}
+.agent-promo span{font-size:clamp(17px,2.1vw,25px);font-weight:900;letter-spacing:.13em;line-height:1.2;color:#f0c98f}
+.agent-promo strong{font:700 clamp(13px,1.45vw,17px) 'Libre Baskerville',Georgia,serif}
+.agent-promo small{font-size:12px;color:#d5dce1}
+.agent-promo>a{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:12px 18px;background:var(--gold);color:#142536;font-weight:800;border:2px solid #f0d1a4;box-shadow:0 4px 0 rgba(0,0,0,.25)}
 .agent-band{padding:88px max(8vw,26px);border-top:8px solid var(--gold);border-bottom:8px solid var(--gold);background:linear-gradient(135deg,#0d1c29 0%,#20394d 65%,#142536 100%)}
 .agent-inner>.section-kicker{display:inline-block;background:var(--gold);color:#142536;padding:12px 18px;font-size:14px;letter-spacing:.16em;border:2px solid #f0d1a4;box-shadow:0 5px 0 rgba(0,0,0,.2)}
 .agent-inner h2{font-size:clamp(36px,5vw,54px);margin:20px 0 14px}
@@ -58,4 +58,4 @@
 .agent-service-grid>div{padding:25px;border-left:4px solid var(--gold);background:rgba(255,255,255,.09)}
 .agent-inner>.button{font-size:17px;padding:20px 32px;min-height:62px;min-width:min(100%,360px);box-shadow:0 5px 0 rgba(0,0,0,.25);border:2px solid #f0d1a4}
 .contact-detail span{max-width:760px;line-height:1.5}
-@media(max-width:700px){.agent-promo{align-items:stretch;flex-direction:column;padding:22px}.agent-promo>a{white-space:normal;text-align:center}.agent-inner>.button{width:100%;font-size:15px;padding:18px 16px}.agent-inner>.section-kicker{font-size:11px}}
+@media(max-width:700px){.agent-promo{top:63%;align-items:stretch;flex-direction:column;padding:10px 16px;gap:8px}.agent-promo span{font-size:15px}.agent-promo strong{font-size:12px}.agent-promo small{font-size:10px}.agent-promo>a{padding:9px 12px}.agent-promo>a{white-space:normal;text-align:center}.agent-inner>.button{width:100%;font-size:15px;padding:18px 16px}.agent-inner>.section-kicker{font-size:11px}}
