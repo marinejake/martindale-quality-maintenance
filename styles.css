@@ -26,3 +26,19 @@
 .project-section>p{color:var(--muted);margin:0}
 @media(max-width:800px){.work-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-photo img{height:220px}}
 @media(max-width:540px){.work-photo-grid{grid-template-columns:1fr}.work-photo img{height:auto;max-height:420px}}
+
+
+/* Real estate agent specialty section */
+.agent-band{background:#142536;color:#fff;padding:76px max(8vw,26px)}
+.agent-inner{max-width:1050px;margin:0 auto}
+.agent-inner h2{font:700 clamp(30px,4vw,42px)/1.2 'Libre Baskerville',Georgia,serif;margin:12px 0}
+.agent-lead{max-width:760px;color:#d5dce1;margin:0 0 28px}
+.agent-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0 30px}
+.agent-service-grid>div{padding:22px;background:rgba(255,255,255,.07);border:1px solid rgba(224,189,140,.35)}
+.agent-service-grid h3{font:700 16px 'Libre Baskerville',Georgia,serif;margin:0 0 8px;color:#f0d1a4}
+.agent-service-grid p{font-size:13px;color:#d5dce1;margin:0}
+.agent-note{font-size:11px;color:#aebbc4;margin:16px 0 0}
+.agent-gallery-intro{background:#142536;color:#fff}
+.agent-gallery-intro>p{color:#d5dce1;max-width:800px}
+.gallery-agent-grid>div{background:rgba(255,255,255,.07)}
+@media(max-width:650px){.agent-service-grid{grid-template-columns:1fr}.agent-band{padding:58px 22px}}
