@@ -19,3 +19,22 @@ if (estimateForm) {
     window.location.href = mailto;
   });
 }
+
+
+const reviewForm = document.getElementById('review-form');
+if (reviewForm) {
+  reviewForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(this);
+    const subject = encodeURIComponent('Customer testimonial submission - Martindale Quality Maintenance');
+    const body = encodeURIComponent(
+      'Customer name: ' + data.get('review-name') + '\n' +
+      'Project type: ' + data.get('review-project') + '\n\n' +
+      'Review:\n' + data.get('review-text') + '\n\n' +
+      'Please confirm permission before publishing this testimonial.'
+    );
+    const status = document.getElementById('review-status');
+    if (status) status.textContent = 'Opening your email app to send your review. Your review will not be published automatically.';
+    window.location.href = 'mailto:martindalequalitymaintenance@gmail.com?subject=' + subject + '&body=' + body;
+  });
+}
