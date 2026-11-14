@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+:root{--navy:#142536;--navy2:#20394d;--cream:#f4f0e8;--gold:#c69b62;--ink:#1b2832;--muted:#66727b}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:18px}body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.6;overflow-x:hidden}a{color:inherit;text-decoration:none}
+.visual-header{position:relative;background:#10283d;color:#fff;width:100%;line-height:0}.hero-art{position:relative;width:100%;line-height:0}.homepage-face{display:block;width:100%;max-width:100%;height:auto;object-fit:contain}.service-strip-image{display:block;width:100%;height:auto;max-width:100%}.face-nav{position:absolute;z-index:5;top:0;right:0;width:49%;height:12.5%;display:grid;grid-template-columns:repeat(5,1fr);gap:0;padding:0;margin:0;background:transparent;border:0}.face-nav a,.phone-hotspot{display:block;width:100%;height:100%;overflow:hidden;text-indent:-9999px;color:transparent;background:transparent}.face-nav a:focus-visible,.phone-hotspot:focus-visible{outline:3px solid #e3b16c;outline-offset:-5px;background:rgba(255,255,255,.12)}.phone-hotspot{position:absolute;z-index:6;left:28%;top:1.8%;width:21%;height:10%}.estimate-hotspot{position:absolute;z-index:6;left:31%;top:78.5%;width:38%;height:16%;display:block;background:transparent;border-radius:14px}.estimate-hotspot:focus-visible{outline:4px solid #e3b16c;outline-offset:2px}
+.section{padding:90px max(8vw,26px)}.section-kicker{font-size:11px;letter-spacing:.2em;font-weight:700;color:#a57e4e}.intro{text-align:center;max-width:850px;margin:auto}.intro h2,.section h2,.contact-section h2{font:700 clamp(30px,4vw,44px)/1.2 'Libre Baskerville',Georgia,serif;margin:14px 0}.intro p{max-width:650px;margin:0 auto;color:var(--muted)}
+.services{background:#faf9f6}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}.section-heading p{max-width:370px;color:var(--muted);font-size:14px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #e8e3da;padding:28px;min-height:190px}.card-icon{font-size:30px;color:#a57e4e}.card h3{font:700 17px 'Libre Baskerville',serif;margin:12px 0 8px}.card p{font-size:13px;color:var(--muted);margin:0}
+.about-band{background:var(--navy);color:#fff;padding:75px 9vw}.about-inner{max-width:1000px;margin:auto;display:grid;grid-template-columns:190px 1fr;gap:55px;align-items:center}.about-mark{height:160px;width:160px;border:2px solid var(--gold);display:grid;place-items:center;font:700 38px 'Libre Baskerville',serif;position:relative}.about-mark span{position:absolute;bottom:20px;font-size:16px;color:var(--gold)}.about-inner h2{font:700 36px/1.2 'Libre Baskerville',serif;margin:12px 0}.about-inner p{max-width:680px;color:#d3dce2;font-size:14px}.text-link{display:inline-block;color:#e0bd8c;font-weight:700;font-size:13px;margin-top:10px}
+.work{text-align:center}.gallery-note{color:var(--muted);font-size:14px}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.gallery-tile{height:220px;display:flex;align-items:end;padding:18px;text-align:left;color:#fff;font-weight:700;transition:transform .18s ease,box-shadow .18s ease;cursor:pointer}.gallery-tile:hover,.gallery-tile:focus-visible{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.18)}.gallery-tile b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#f0d1a4;margin-top:7px}
+.tile-one{background:linear-gradient(0deg,rgba(10,24,34,.82),transparent 75%),url("project-photos/wood-paneling-finished-01.jpeg") center/cover}
+.tile-two{background:linear-gradient(0deg,rgba(10,24,34,.82),transparent 75%),url("project-photos/bathroom-remodel-06.jpeg") center/cover}
+.tile-three{background:linear-gradient(0deg,rgba(10,24,34,.82),transparent 75%),url("project-photos/paver-patio-completed-wide.jpeg") center/cover}
+.contact-section{background:#eae5db;padding:80px max(8vw,26px);display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact-copy>p{color:var(--muted);max-width:420px}.contact-detail{margin-top:22px;display:flex;flex-direction:column}.contact-detail small{font-size:10px;letter-spacing:.18em;color:#987348;font-weight:700}.contact-detail a,.contact-detail span{font-weight:700}.estimate-form{background:#fff;padding:30px;display:grid;gap:14px}.estimate-form label{display:grid;gap:6px;font-size:12px;font-weight:700}.estimate-form input,.estimate-form select,.estimate-form textarea{width:100%;border:1px solid #d9d7d1;padding:12px;font:14px 'DM Sans',sans-serif;background:#fff;color:var(--ink)}.estimate-form textarea{resize:vertical}.button{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;font:700 13px 'DM Sans',sans-serif;letter-spacing:.04em;border:1px solid transparent;cursor:pointer}.button-light{background:var(--gold);color:#172635}.button-light:hover{background:#d8b783}.estimate-form .button{width:100%;border:0}.form-hint{font-size:10px;color:#777;margin:0}footer{background:#0d1c29;color:#c9d1d7;padding:26px 6vw;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px}.footer-brand{font-weight:700;letter-spacing:.08em;color:white}
+@media(max-width:800px){.section{padding-top:65px;padding-bottom:65px}.section-heading{display:block}.cards{grid-template-columns:repeat(2,1fr)}.about-inner{grid-template-columns:1fr;gap:25px}.about-mark{width:120px;height:120px}.gallery-grid{grid-template-columns:1fr}.gallery-tile{height:180px}.contact-section{grid-template-columns:1fr;gap:35px}}
+@media(max-width:600px){.face-nav{width:49%;height:12.5%}.phone-hotspot{left:28%;top:1.8%;width:21%;height:10%}.estimate-hotspot{left:31%;top:78.5%;width:38%;height:16%}.cards{grid-template-columns:1fr}.contact-section{padding-left:22px;padding-right:22px}.estimate-form{padding:20px}}
+
+/* Project gallery page */
+.gallery-page-hero{background:var(--navy);color:#fff;text-align:center;padding:58px 24px}.gallery-page-hero h1{font:700 clamp(30px,4vw,46px)/1.2 'Libre Baskerville',Georgia,serif;margin:10px 0}.gallery-page-hero p{color:#d5dce1;max-width:680px;margin:0 auto}.gallery-page-nav{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;padding:16px;background:#0d1c29;color:#fff;font-size:13px}.gallery-page-nav a:hover{color:#e0bd8c}.project-section{padding:55px max(8vw,26px);scroll-margin-top:20px}.project-section:nth-child(even){background:#faf9f6}.project-section h2{font:700 27px 'Libre Baskerville',Georgia,serif;margin:0 0 8px}.project-section>p{color:var(--muted);margin:0 0 24px}.photo-slots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.photo-slot{min-height:210px;border:2px dashed #c8b99f;background:linear-gradient(135deg,#f1eee7,#e2ddd2);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;color:#6c6a63}.photo-slot strong{font:700 14px 'DM Sans',sans-serif;color:#344553}.photo-slot span{font-size:12px;margin-top:6px}.gallery-back{display:inline-block;margin-top:22px;color:#8d673e;font-weight:700}@media(max-width:700px){.photo-slots{grid-template-columns:1fr}.photo-slot{min-height:170px}}
+
+.work-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+.work-photo{margin:0;background:#fff;border:1px solid #e7e1d7;box-shadow:0 5px 18px rgba(20,37,54,.08);overflow:hidden}
+.work-photo img{display:block;width:100%;height:270px;object-fit:cover}
+.work-photo figcaption{padding:12px 14px;font-size:13px;font-weight:600;color:var(--ink)}
+.project-section{padding:54px max(7vw,22px);border-bottom:1px solid #e9e4db}
+.project-section:nth-child(even){background:#faf9f6}
+.project-section h2{font:700 clamp(24px,3vw,34px)/1.2 'Libre Baskerville',Georgia,serif;margin:0 0 8px}
+.project-section>p{color:var(--muted);margin:0}
+@media(max-width:800px){.work-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-photo img{height:220px}}
+@media(max-width:540px){.work-photo-grid{grid-template-columns:1fr}.work-photo img{height:auto;max-height:420px}}
+
+
+/* Real estate agent specialty section */
+.agent-band{background:#142536;color:#fff;padding:76px max(8vw,26px)}
+.agent-inner{max-width:1050px;margin:0 auto}
+.agent-inner h2{font:700 clamp(30px,4vw,42px)/1.2 'Libre Baskerville',Georgia,serif;margin:12px 0}
+.agent-lead{max-width:760px;color:#d5dce1;margin:0 0 28px}
+.agent-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0 30px}
+.agent-service-grid>div{padding:22px;background:rgba(255,255,255,.07);border:1px solid rgba(224,189,140,.35)}
+.agent-service-grid h3{font:700 16px 'Libre Baskerville',Georgia,serif;margin:0 0 8px;color:#f0d1a4}
+.agent-service-grid p{font-size:13px;color:#d5dce1;margin:0}
+.agent-note{font-size:11px;color:#aebbc4;margin:16px 0 0}
+.agent-gallery-intro{background:#142536;color:#fff}
+.agent-gallery-intro>p{color:#d5dce1;max-width:800px}
+.gallery-agent-grid>div{background:rgba(255,255,255,.07)}
+@media(max-width:650px){.agent-service-grid{grid-template-columns:1fr}.agent-band{padding:58px 22px}}
+
+
+/* Expanded service-area line and high-visibility real estate agent callout */
+.agent-promo{position:relative;z-index:4;width:100%;display:flex;align-items:center;justify-content:space-between;gap:26px;padding:15px max(8vw,26px);background:linear-gradient(110deg,rgba(13,28,41,.97),rgba(32,57,77,.97));border-top:4px solid var(--gold);border-bottom:4px solid var(--gold);color:#fff;line-height:1.35}
+.agent-promo>div{display:grid;gap:4px}
+.agent-promo span{font-size:clamp(17px,2.1vw,25px);font-weight:900;letter-spacing:.13em;line-height:1.2;color:#f0c98f}
+.agent-promo strong{font:700 clamp(13px,1.45vw,17px) 'Libre Baskerville',Georgia,serif}
+.agent-promo small{font-size:12px;color:#d5dce1}
+.agent-promo>a{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:12px 18px;background:var(--gold);color:#142536;font-weight:800;border:2px solid #f0d1a4;box-shadow:0 4px 0 rgba(0,0,0,.25)}
+.agent-band{padding:88px max(8vw,26px);border-top:8px solid var(--gold);border-bottom:8px solid var(--gold);background:linear-gradient(135deg,#0d1c29 0%,#20394d 65%,#142536 100%)}
+.agent-inner>.section-kicker{display:inline-block;background:var(--gold);color:#142536;padding:12px 18px;font-size:14px;letter-spacing:.16em;border:2px solid #f0d1a4;box-shadow:0 5px 0 rgba(0,0,0,.2)}
+.agent-inner h2{font-size:clamp(36px,5vw,54px);margin:20px 0 14px}
+.agent-lead{font-size:17px;max-width:850px}
+.agent-service-grid>div{padding:25px;border-left:4px solid var(--gold);background:rgba(255,255,255,.09)}
+.agent-inner>.button{font-size:17px;padding:20px 32px;min-height:62px;min-width:min(100%,360px);box-shadow:0 5px 0 rgba(0,0,0,.25);border:2px solid #f0d1a4}
+.contact-detail span{max-width:760px;line-height:1.5}
+@media(max-width:700px){.agent-promo{top:63%;align-items:stretch;flex-direction:column;padding:10px 16px;gap:8px}.agent-promo span{font-size:15px}.agent-promo strong{font-size:12px}.agent-promo small{font-size:10px}.agent-promo>a{padding:9px 12px}.agent-promo>a{white-space:normal;text-align:center}.agent-inner>.button{width:100%;font-size:15px;padding:18px 16px}.agent-inner>.section-kicker{font-size:11px}}
+
+
+/* Customer testimonials: submissions are emailed for manual approval */
+.testimonials{background:#f7f5f0}
+.testimonials .section-heading{margin-bottom:28px}
+.testimonial-empty{max-width:760px;margin:0 auto 24px;padding:30px;text-align:center;background:#fff;border:1px solid #e5ded2;border-top:4px solid var(--gold)}
+.testimonial-stars{font-size:23px;letter-spacing:.18em;color:#b78a4f}
+.testimonial-empty h3,.review-form h3{font:700 20px 'Libre Baskerville',Georgia,serif;margin:10px 0}
+.testimonial-empty p{max-width:620px;margin:0 auto;color:var(--muted);font-size:14px}
+.review-form{max-width:760px;margin:0 auto;background:#fff;padding:30px;border:1px solid #e5ded2;display:grid;gap:14px}
+.review-form h3{margin:0 0 4px}
+.review-form label{display:grid;gap:6px;font-size:12px;font-weight:700}
+.review-form input,.review-form select,.review-form textarea{width:100%;border:1px solid #d9d7d1;padding:12px;font:14px 'DM Sans',sans-serif;background:#fff;color:var(--ink)}
+.review-form textarea{resize:vertical}
+.review-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.review-form .button{width:100%;border:0}
+@media(max-width:600px){.review-form{padding:20px}.review-form-grid{grid-template-columns:1fr}.testimonial-empty{padding:24px 18px}}
