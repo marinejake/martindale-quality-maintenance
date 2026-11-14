@@ -13,6 +13,9 @@ if (estimateForm) {
       'Project type: ' + data.get('service') + '\n\n' +
       'Project details:\n' + (data.get('details') || '')
     );
-    window.location.href = 'mailto:martindalequalitymaintenance@gmail.com?subject=' + subject + '&body=' + body;
+    const mailto = 'mailto:martindalequalitymaintenance@gmail.com?subject=' + subject + '&body=' + body;
+    const status = document.getElementById('form-status');
+    if (status) status.textContent = 'Opening your email app with your estimate request. If nothing opens, email martindalequalitymaintenance@gmail.com or call 907-217-3276.';
+    window.location.href = mailto;
   });
 }
