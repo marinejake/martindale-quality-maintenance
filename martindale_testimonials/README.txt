@@ -18,3 +18,7 @@ Homepage gallery cards now show: epoxy bar top for Home Improvements, restroom r
 
 CUSTOMER REVIEWS
 The homepage now includes a customer testimonial section. Review submissions open the visitor's email app and are sent to martindalequalitymaintenance@gmail.com. The site does not store submissions or publish them automatically. Review each submission and obtain the customer's permission before adding their testimonial to the public page.
+
+
+HTTPS FONT FIX
+The Google Fonts @import has been removed from styles.css. The site now uses system fallback fonts so it no longer requests fonts.googleapis.com or fonts.gstatic.com. The CNAME file is included and contains martindalequalitymaintenance.com.
