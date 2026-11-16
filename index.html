@@ -94,6 +94,19 @@
     <div class="review-form-grid">
       <label>Your name<input name="review-name" required autocomplete="name" placeholder="Name (or initials)"></label>
       <label>Project type<select name="review-project"><option>Handyman / repairs</option><option>Home improvement / remodeling</option><option>Property maintenance</option><option>Real estate / market-ready work</option><option>Lawn care / hardscape</option><option>Cleanout / junk removal</option><option>Other</option></select></label>
+      <fieldset class="review-rating">
+  <legend>Your star rating</legend>
+  <label><input type="radio" name="rating" value="5" required> ★★★★★</label>
+  <label><input type="radio" name="rating" value="4"> ★★★★</label>
+  <label><input type="radio" name="rating" value="3"> ★★★</label>
+  <label><input type="radio" name="rating" value="2"> ★★</label>
+  <label><input type="radio" name="rating" value="1"> ★</label>
+</fieldset>
+
+<label class="review-permission">
+  <input type="checkbox" name="permission" value="yes" required>
+  I give Martindale Quality Maintenance permission to publish my review if it is approved.
+</label>
     </div>
     <label>Your review<textarea name="review-text" rows="4" required placeholder="Tell us what work we completed and how your experience was…"></textarea></label>
     <button class="button button-light" type="submit">Submit Review</button>
