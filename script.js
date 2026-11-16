@@ -22,19 +22,45 @@ if (estimateForm) {
 
 
 const reviewForm = document.getElementById('review-form');
+
 if (reviewForm) {
-  reviewForm.addEventListener('submit', function (e) {
+  reviewForm.addEventListener('submit', async function (e) {
     e.preventDefault();
+
     const data = new FormData(this);
-    const subject = encodeURIComponent('Customer testimonial submission - Martindale Quality Maintenance');
-    const body = encodeURIComponent(
-      'Customer name: ' + data.get('review-name') + '\n' +
-      'Project type: ' + data.get('review-project') + '\n\n' +
-      'Review:\n' + data.get('review-text') + '\n\n' +
-      'Please confirm permission before publishing this testimonial.'
-    );
+
+    const params = new URLSearchParams({
+      name: data.get('review-name'),
+      project: data.get('review-project'),
+      rating: data.get('rating'),
+      review: data.get('review-text'),
+      permission: data.get('permission')
+    });
+
     const status = document.getElementById('review-status');
-    if (status) status.textContent = 'Opening your email app to send your review. Your review will not be published automatically.';
-    window.location.href = 'mailto:martindalequalitymaintenance@gmail.com?subject=' + subject + '&body=' + body;
+
+    if (status) status.textContent = 'Submitting your review...';
+
+    try {
+      await fetch(
+        'https://script.google.com/macros/s/AKfycbyyLQvOSivjHIl1azuQgTQdBn7o80Pab2nl34842jrBoW33H_7z9G-e6tPA1YnlchC5/exec',
+        {
+          method: 'POST',
+          mode: 'no-cors',
+          body: params
+        }
+      );
+
+      if (status) {
+        status.textContent = 'Thank you! Your review has been submitted for approval.';
+      }
+
+      this.reset();
+
+    } catch (error) {
+      if (status) {
+        status.textContent = 'There was a problem submitting your review. Please try again.';
+      }
+    }
   });
 }
